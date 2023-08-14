@@ -89,8 +89,8 @@ INSERT INTO `bill` (`BillID`, `UserID`, `Billdate`, `Receiver`, `Phonenumber`, `
 CREATE TABLE `billdetail` (
   `BilldetailID` int(11) NOT NULL,
   `ProductID` int(11) NOT NULL,
-  `Billdetailnumber` int(11) NOT NULL,
-  `Billdetailprice` float NOT NULL
+  `amout` int(11) NOT NULL,
+  `price` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=DYNAMIC;
 
 --
