@@ -90,12 +90,12 @@ class LoginController
 
         if (isset($_POST['Ho'])) {
             $data = array(
-                'Ho' =>    $_POST['Ho'],
-                'Ten'  =>   $_POST['Ten'],
-                'GioiTinh' => $_POST['GioiTinh'],
-                'SDT' => $_POST['SĐT'],
+                'UserFirstname' =>    $_POST['Ho'],
+                'UserLastname'  =>   $_POST['Ten'],
+                'UserGender' => $_POST['GioiTinh'],
+                'UserPhone' => $_POST['SĐT'],
                 'Email' =>    $_POST['Email'],
-                'DiaChi'  =>   $_POST['DiaChi'],
+                'UserAddress'  =>   $_POST['DiaChi'],
             );
             foreach ($data as $key => $value) {
                 if (strpos($value, "'") != false) {
@@ -108,7 +108,7 @@ class LoginController
             if ($_POST['MatKhauMoi'] == $_POST['MatKhauXN']) {
                 if (md5($_POST['MatKhau']) == $_SESSION['login']['MatKhau']) {
                     $data = array(
-                        'MatKhau' => md5($_POST['MatKhauMoi']),
+                        'UserPassword' => md5($_POST['MatKhauMoi']),
                     );
                     $this->login_model->update_account($data);
                 } else {
