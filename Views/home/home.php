@@ -174,7 +174,6 @@ require_once "banner.php"
 <!-- collection section start -->
 
 
-
 <section class="collection-area collection-area2 section-padding">
     <div class="container">
         <div class="row">
@@ -192,22 +191,16 @@ require_once "banner.php"
                         <img src="public/<?php echo $data_random['0']['ProductImage1'] ?>" alt="" />
                     </a>
                 </div>
-            </div>
-            <div class="col-sm-4">
                 <div class="colect-text ">
                     <h4><a href="#"><?php echo $data_random['0']['ProductName'] ?></a></h4>
                     <h5>Giá: <?php echo number_format($data_random['0']['ProductPrice']) ?> VNĐ</h5>
                     <a href="?act=detail&id=<?php echo $data_random['0']['ProductID'] ?>">Mua ngay <i
                             class="mdi mdi-arrow-right"></i></a>
                 </div>
-                <div class="collect-img banner margin single-colect">
-                    <a href="#"><img src="public/<?php echo $data_random['0']['ProductImage2'] ?>" alt="" /></a>
-                </div>
             </div>
             <div class="col-sm-4">
-                <div class="collect-img banner single-colect">
-                    <a href="?act=detail&id=<?php echo $data_random['1']['ProductID'] ?>"><img
-                            src="public/<?php echo $data_random['1']['ProductImage1'] ?>" alt="" /></a>
+                <div class="collect-img banner margin single-colect">
+                    <a href="#"><img src="public/<?php echo $data_random['1']['ProductImage2'] ?>" alt="" /></a>
                 </div>
                 <div class="colect-text ">
                     <h4><a
@@ -215,6 +208,20 @@ require_once "banner.php"
                     </h4>
                     <h5>Giá: <?php echo number_format($data_random['1']['ProductPrice']) ?> VNĐ</h5>
                     <a href="?act=detail&id=<?php echo $data_random['1']['ProductID'] ?>">Mua ngay <i
+                            class="mdi mdi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="collect-img banner single-colect">
+                    <a href="?act=detail&id=<?php echo $data_random['2']['ProductID'] ?>"><img
+                            src="public/<?php echo $data_random['2']['ProductImage2'] ?>" alt="" /></a>
+                </div>
+                <div class="colect-text ">
+                    <h4><a
+                            href="?act=detail&id=<?php echo $data_random['2']['ProductID'] ?>"><?php echo $data_random['2']['ProductName'] ?></a>
+                    </h4>
+                    <h5>Giá: <?php echo number_format($data_random['2']['ProductPrice']) ?> VNĐ</h5>
+                    <a href="?act=detail&id=<?php echo $data_random['2']['ProductID'] ?>">Mua ngay <i
                             class="mdi mdi-arrow-right"></i></a>
                 </div>
             </div>
